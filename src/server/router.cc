@@ -44,8 +44,8 @@ Request::param(std::string name) const {
     return *it;
 }
 
-std::vector<TypedParam>& accessParams () const
-{
+std::vector<TypedParam>&
+Request::accessParams () const {
    return params_;
 }
 
