@@ -44,6 +44,11 @@ Request::param(std::string name) const {
     return *it;
 }
 
+std::vector<TypedParam>& accessParams () const
+{
+   return params_;
+}
+
 TypedParam
 Request::splatAt(size_t index) const {
     if (index >= splats_.size()) {
