@@ -11,6 +11,8 @@ set(SOURCE_FILES
     ${INCLUDE_FILES}
 )
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpic")
+
 add_library(pistache ${SOURCE_FILES})
 set_target_properties(pistache PROPERTIES
     OUTPUT_NAME "pistache"
