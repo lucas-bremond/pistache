@@ -190,6 +190,8 @@ public:
 
     bool hasParam(std::string name) const;
     TypedParam param(std::string name) const;
+   
+    const std::vector<TypedParam>& accessParams() const;
 
     TypedParam splatAt(size_t index) const;
     std::vector<TypedParam> splat() const;
