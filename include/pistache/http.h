@@ -97,6 +97,8 @@ namespace Uri {
         void add(std::string name, std::string value);
         Optional<std::string> get(const std::string& name) const;
         bool has(const std::string& name) const;
+       
+        const std::unordered_map<std::string, std::string>& accessParams() const;
 
         void clear() {
             params.clear();
