@@ -503,6 +503,11 @@ namespace Uri {
 
         return Some(it->second);
     }
+    
+    const std::unordered_map<std::string, std::string>&
+    Query::accessParams() const {
+       return params;
+    }
 
     bool
     Query::has(const std::string& name) const {
